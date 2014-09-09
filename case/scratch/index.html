@@ -5,20 +5,38 @@
 	<title>刮刮卡案例</title>
     <link rel="stylesheet" href="../../stylesheets/styles.css">
     <link rel="stylesheet" href="../../stylesheets/pygment_trac.css">
+    <style type="text/css">
+		.demo_area{}
+		.demo_area .scratchpad{height: 200px;width: 200px;border:1px solid ;}
+    </style>
 </head>
 <body>
 	<div class="page">
 		<header>
 			<h1>Fecode</h1>
-			 <p>code 实验室 - 案例</p>
+			<p>code 实验室 - 案例</p>
 		</header>
 		<div class="container">
 			<aside class="aside"></aside>
-			<div class="content"></div>
+			<div class="content">
+				<div class="demo_area">
+					<div class="scratchpad" id="scratchpad"></div>
+				</div>
+			</div>
 		</div>
 		<footer></footer>
 	</div>
 </body>
 <script type="text/javascript" src="../../javascripts/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="../../javascripts/require.js"></script>
+<script type="text/javascript" src="/wScratchPad.min.js"></script>
+<script type="text/javascript">
+
+$("#scratchpad").wScratchPad(function(){
+	scratchMove:function(e, percent){
+		console.log(percent);
+	}
+})
+
+</script>
 </html>
