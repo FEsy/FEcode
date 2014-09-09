@@ -44,8 +44,14 @@ $("#scratchpad").wScratchPad({
 	bg:"./test.jpg",
 	fg:"#ff0000",
 	cursor:"",
+	scratchDown: function(e, percent){
+		console.log("dowm"+percent);
+	},
+	scratchUp: function(e, percent){
+		console.log("Up"+percent);
+	},
 	scratchMove:function(e, percent){
-		console.log(percent);
+		console.log("move"+percent);
 		if(percent>50)
 		{
 			this.clear();
