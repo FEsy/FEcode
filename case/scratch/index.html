@@ -29,14 +29,15 @@
 </body>
 <script type="text/javascript" src="../../javascripts/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="../../javascripts/require.js"></script>
-<script type="text/javascript" src="/wScratchPad.min.js"></script>
+<script type="text/javascript" src="./wScratchPad.min.js"></script>
 <script type="text/javascript">
 
-$("#scratchpad").wScratchPad(function(){
+$("#scratchpad").wScratchPad({
 	scratchMove:function(e, percent){
 		console.log(percent);
 	}
 })
+
 
 </script>
 </html>
