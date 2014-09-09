@@ -40,6 +40,10 @@ $("#scratchpad").wScratchPad({
 	cursor:"",
 	scratchMove:function(e, percent){
 		console.log(percent);
+		if(percent>50)
+		{
+			this.clear();
+		}
 	}
 })
 
