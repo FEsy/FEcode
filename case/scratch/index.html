@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>刮刮卡案例</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="../../stylesheets/styles.css">
     <link rel="stylesheet" href="../../stylesheets/pygment_trac.css">
     <style type="text/css">
 		.container{width: 1200px;margin: 0 auto;}
 		.demo_area{}
-		.demo_area .scratchpad{height: 200px;width: 200px;border:1px solid ;}
+		.demo_area .scratchpad{height: 100px;width: 200px;border:1px solid ;}
     </style>
 </head>
 <body>
@@ -34,6 +35,9 @@
 <script type="text/javascript">
 
 $("#scratchpad").wScratchPad({
+	bg:"./test.jpg",
+	fg:"#ff0000",
+	cursor:"",
 	scratchMove:function(e, percent){
 		console.log(percent);
 	}
