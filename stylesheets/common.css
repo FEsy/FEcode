@@ -23,4 +23,8 @@
 
 .bs{box-sizing: -moz-border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 
-.
+xmp, pre, plaintext{
+	display: block;
+	white-space:pre-wrap;
+	line-height: 18px;
+}
