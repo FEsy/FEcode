@@ -6,5 +6,9 @@
 */
 @charset "utf-8";
 .case-page{}
-.case-page .aside{}
-.case-title{}
+.case-page .aside{width: 200px;overflow: hidden;}
+.case-page .aside li{width: 100%;list-style: none;border-left:1px solid #fff;}
+.case-page .aside li a{height: 40px;line-height: 40px;width: 100%;display: block;}
+.case-page .aside li li:hover{border-color: #3399cc;}
+.case-page .aside {}
+.case-title{margin-bottom: 10px;}

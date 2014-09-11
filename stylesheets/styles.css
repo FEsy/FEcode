@@ -151,35 +151,7 @@ a:active {
  * Addresses font sizes and margins set differently in IE6/7
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
-}
-
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
-}
-
-h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
-}
-
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
-}
-
-h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0;
-}
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
@@ -513,34 +485,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  margin: 0 0 10px;
+  margin: 0px;
+  padding:0px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin: 0 0 20px;
+  margin: 0px;
+  padding:0px;
 }
 
-h1, h2, h3 {
-  line-height: 1.1;
-}
-
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 24px;
-  color: #393939;
-}
-
-h3, h4, h5, h6 {
-  color: #666666;
-}
-
-h3 {
-  font-size: 18px;
-  line-height: 24px;
-}
 
 a {
   color: #3399cc;
