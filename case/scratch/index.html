@@ -6,29 +6,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="../../stylesheets/styles.css">
     <link rel="stylesheet" href="../../stylesheets/pygment_trac.css">
-    <style type="text/css">
-		.container{width: 1200px;margin: 0 auto;padding-top: 10px;}
-		.demo_area{}
-		.demo_area .scratchpad{height: 100px;width: 200px;border:1px solid ;}
-    </style>
+     <link rel="stylesheet" href="../../stylesheets/common.css">
+    <link rel="stylesheet" type="text/css" href="../case.css">
 </head>
 <body>
-	<div class="page">
+	<div class="page case-page">
 		<header>
 			<h1>Fecode</h1>
 			<p>code 实验室 - 案例</p>
 		</header>
-		<div class="container">
-			<aside class="aside"></aside>
-			<div class="content">
-				<div class="demo_area">
-					<div class="scratchpad" id="scratchpad"></div>
-					<div class="btn_option">
-						  <input type="button" value="Reset" onclick="$('#scratchpad').wScratchPad('reset');"/>
-    					  <input type="button" value="Clear" onclick="$('#scratchpad').wScratchPad('clear');"/>
-     					 <input type="button" value="Enable" onclick="$('#scratchpad').wScratchPad('enable', true);"/>
-     					 <input type="button" value="Disable" onclick="$('#scratchpad').wScratchPad('enable', false);"/>
+		<div class="wrapper">
+			<div class="flex">
+				<aside class="aside">
+					<ul>
+						<li><a href="#title">标题</a></li>
+						<li><a href="#idea">思路</a></li>
+						<li><a href="#demo">演示</a></li>
+						<li><a href="#notice">注意</a></li>
+					</ul>
+				</aside>
+				<div class="flex_child content">
+					<h2 class="case-title" id="title">标题</h2>
+					<div>刮刮卡</div>
+					<h2 class="case-title" id="idea">思路</h2>
+					<div>
+						<p></p>
+						<p></p>
 					</div>
+					<h2 class="case-title" id="demo">演示</h2>
+					<div class="demo_area">
+						<div class="scratchpad" id="scratchpad"></div>
+						<div class="btn_option">
+							<input type="button" value="Reset" onclick="$('#scratchpad').wScratchPad('reset');"/>
+							<input type="button" value="Clear" onclick="$('#scratchpad').wScratchPad('clear');"/>
+							<input type="button" value="Enable" onclick="$('#scratchpad').wScratchPad('enable', true);"/>
+							<input type="button" value="Disable" onclick="$('#scratchpad').wScratchPad('enable', false);"/>
+						</div>
+					</div>
+					<h2 class="case-title" id="notice">注意问题：</h2>
+					<div></div>
 				</div>
 			</div>
 		</div>
@@ -42,7 +58,7 @@
 
 $("#scratchpad").wScratchPad({
 	bg:"./test.jpg",
-	fg:"#ff0000",
+	fg:"#B3B3B3",
 	cursor:"",
 	scratchDown: function(e, percent){
 		console.log("dowm"+percent);
