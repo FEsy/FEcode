@@ -38,24 +38,24 @@
 						<p>引入wScratchPad.min.js脚本文件</p>
 						<p>实例化刮刮卡元素</p>
 						<xmp>
-							"$("#scratchpad").wScratchPad({
-									bg:"./test.jpg",
-									fg:"#B3B3B3",
-									cursor:"",
-									scratchDown: function(e, percent){
-										console.log("dowm"+percent);
-									},
-									scratchUp: function(e, percent){
-										console.log("Up"+percent);
-									},
-									scratchMove:function(e, percent){
-										console.log("move"+percent);
-										if(percent>50)
-										{
-											this.clear();
-										}
-									}
-							 })"
+"$("#scratchpad").wScratchPad({
+		bg:"./test.jpg",
+		fg:"#B3B3B3",
+		cursor:"",
+		scratchDown: function(e, percent){
+			console.log("dowm"+percent);
+		},
+		scratchUp: function(e, percent){
+			console.log("Up"+percent);
+		},
+		scratchMove:function(e, percent){
+			console.log("move"+percent);
+			if(percent>50)
+			{
+				this.clear();
+			}
+		}
+ })"
 						</xmp>
 					</div>
 

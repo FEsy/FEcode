@@ -27,4 +27,6 @@ xmp, pre, plaintext{
 	display: block;
 	white-space:pre-wrap;
 	line-height: 18px;
+	background: #efe;
+	border:1px  solid #ddd;
 }
