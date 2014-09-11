@@ -77,10 +77,10 @@ $("#elem").wScratchPad("enabled", <boolean>);
 					<div class="case-content">
 						<div class="scratchpad" id="scratchpad"></div>
 						<div class="btn-option">
-							<input type="button" value="Reset" onclick="$('#scratchpad').wScratchPad('reset');"/>
-							<input type="button" value="Clear" onclick="$('#scratchpad').wScratchPad('clear');"/>
-							<input type="button" value="Enable" onclick="$('#scratchpad').wScratchPad('enable', true);"/>
-							<input type="button" value="Disable" onclick="$('#scratchpad').wScratchPad('enable', false);"/>
+							<input type="button" value="Reset" class="js_reset"   />
+							<input type="button" value="Clear" class="js_clear"    />
+							<input type="button" value="Enable" class="js_enable"  />
+							<input type="button" value="Disable" class="js_disable" />
 						</div>
 					</div>
 					<h2 class="case-title" id="notice">注意问题：</h2>
@@ -133,10 +133,25 @@ $("#scratchpad").wScratchPad({
 	}
 })
 
-$("")
+//重置
+$(".js_reset").click(function(){
+	$("#scratchpad").wScratchPad("reset");
+})
 
+//清除
+$(".js_clear").click(function(){
+	$("#scratchpad").wScratchPad("clear");
+})
 
+//开启
+$(".js_enable").click(function(){
+	$("#scratchpad").wScratchPad("enabled", true);
+})
 
+//静止
+$(".js_disable").click(function(){
+	$("#scratchpad").wScratchPad("enabled", false);
+})
 
 
 </script>
