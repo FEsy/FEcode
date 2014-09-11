@@ -38,10 +38,12 @@
 						<p>引入wScratchPad.min.js脚本文件</p>
 						<p>实例化刮刮卡元素</p>
 						<xmp>
-"$("#scratchpad").wScratchPad({
-		bg:"./test.jpg",
-		fg:"#B3B3B3",
-		cursor:"",
+$("#elem").wScratchPad({
+		size: 5,//刷子大小
+		bg : "./test.jpg",//背景色可以是颜色值或者图片
+		fg : "#B3B3B3",//前景色
+		cursor : "",//鼠标样式
+		realtime : true,//实时计算擦出百分比
 		scratchDown: function(e, percent){
 			console.log("dowm"+percent);
 		},
@@ -55,7 +57,19 @@
 				this.clear();
 			}
 		}
- })"
+ })
+						</xmp>
+						<p>再来一次</p>
+						<xmp>
+$("#elem").wScratchPad("reset")
+						</xmp>
+						<p>开挂显示</p>
+						<xmp>
+$("#elem").wScratchPad("clear");
+						</xmp>
+						<p>是否可以刮</p>
+						<xmp>
+$("#elem").wScratchPad("enabled", <boolean>);
 						</xmp>
 					</div>
 
