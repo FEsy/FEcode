@@ -7,8 +7,12 @@
 @charset "utf-8";
 .case-page{}
 .case-page .aside{width: 200px;overflow: hidden;}
-.case-page .aside li{width: 100%;list-style: none;border-left:1px solid #fff;}
+.case-page .aside li{width: 100%;list-style: none;}
 .case-page .aside li a{height: 40px;line-height: 40px;width: 100%;display: block;}
-.case-page .aside li li:hover{border-color: #3399cc;}
+.case-page .aside li:hover{}
 .case-page .aside {}
-.case-title{margin-bottom: 10px;}
+.case-title{}
+.case-content {padding:5px;}
+
+.scratchpad{width: 200px;height: 50px;}
+.btn-option{margin: 5px 0px;}
