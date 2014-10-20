@@ -4,7 +4,8 @@
 	author:sy;
 */
 .case_page{}
+.case_page .container{width: 1000px;margin: 0 auto;}
 .case_page .case_content{}
 .case_content .itemt_itle{}
-.case_content .item_content{}
+.case_content .item_content{margin-left: 20px;padding: 10px;}
 .case_page .case_aside{}
