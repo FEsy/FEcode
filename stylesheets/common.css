@@ -1,0 +1,32 @@
+/*
+	*author:sy;
+	*time:09-11;
+	*update:09-11;
+	*describe:公共属性样式;
+
+*/
+
+
+
+.flex{display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex_child{-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+  }
+
+.bs{box-sizing: -moz-border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+
+xmp, pre, plaintext{
+	display: block;
+	white-space:pre-wrap;
+	line-height: 18px;
+	background: #efe;
+	border:1px  solid #ddd;
+}

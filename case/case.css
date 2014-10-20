@@ -1,0 +1,19 @@
+/*
+	*author:sy;
+	*time:09-11;
+	*update:09-11;
+	*describe:案例布局样式;
+*/
+@charset "utf-8";
+.case-page{}
+.case-page .aside{width: 200px;position: fixed;overflow: hidden;}
+.case-page .aside li{width: 100%;list-style: none;}
+.case-page .aside li a{height: 40px;line-height: 40px;width: 100%;display: block;}
+.case-page .aside li:hover{}
+.case-page .aside {}
+.case-title{}
+.min-title{margin-top: 5px;margin-bottom: 10px;}
+.case-content {padding:10px;margin-left: 20px;}
+.case-content p{line-height: 21px;font-size: 14px;}
+.scratchpad{width: 200px;height: 50px;}
+.btn-option{margin: 5px 0px;}
