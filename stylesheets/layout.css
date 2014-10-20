@@ -4,10 +4,10 @@
 	author:sy;
 */
 .case_page{}
-.case_page .container{width: 1000px;margin: 0 auto;}
-.case_page .case_content{}
-.case_content .itemt_itle{}
-.case_content .item_content{margin-left: 20px;padding: 10px;}
+.case_page     .case_container{width: 1000px;margin: 0 auto;}
+.case_page     .case_content{}
+.case_content  .itemt_itle{}
+.case_content  .item_content{margin-left: 20px;padding: 10px;}
 .case_page .case_aside{width: 200px;position: fixed;overflow: hidden;}
 .case_aside li{width: 100%;}
 .case_aside li a{height: 40px;line-height: 40px;width: 100%;display: block;}
